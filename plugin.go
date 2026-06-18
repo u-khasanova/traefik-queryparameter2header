@@ -1,4 +1,4 @@
-package queryparameter2header
+package main
 
 import (
 	"context"
@@ -62,3 +62,5 @@ func (a *QueryParameterToHeader) ServeHTTP(rw http.ResponseWriter, req *http.Req
 	}
 	a.next.ServeHTTP(rw, req)
 }
+
+func main(){}
